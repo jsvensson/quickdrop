@@ -2,14 +2,19 @@
 
 <html lang="en">
 <head>
+	<title>QuickDrop</title>
 	<link rel="stylesheet" href="source/quickdrop.css" type="text/css" media="screen" charset="utf-8">
 	<script src="source/jquery-1.5.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="source/quickdrop.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body>
-</body>	
+<body id="body">
 <div id="pagecontainer">
-	<div id="status">Uploading...</div>
-	<div id="progress"><progress max="100" value="72"></div>
-	<div id="files">File list goes here... some time.</div>
+	<div id="status" class="box">QuickDrop</div>
+	<div id="browserwarning" class="box"><strong>QuickDrop</strong> currently only works with Chrome.</div>
+	<div id="progress" class="box">Upload progress bar</div>
+	<div id="files" class="box">File list goes here... some time.</div>
+	<div id="overlay"><h1>Drop it!</h1></div>
+	<div id="footer"><a href="https://github.com/jsvensson/quickdrop">QuickDrop</a> from <a href="http://atomicplayboy.net/">Atomic Playboy</a></div>
 </div>
+</body>
 </html>

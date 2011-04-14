@@ -11,21 +11,92 @@
 
 }
 
-body {
-	background-color: #999;
+* {
+	margin: 0;
+	padding: 0;
 }
 
+body {
+	color: #000;
+	background-color: #333;
+	text-align: center; /* IE shenanigans */
+}
+
+/*
+ *	Classes
+ */
+
+.box {
+	background-color: #999;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 0px #333, -1px -1px 0px #aaa;
+}
+
+
+/*
+ *	Named containers
+ */
+
 #pagecontainer {
-	text-align: center;
-	width: 100%;
-	padding-top: 80px;
+	text-align: left;
+	min-width: 450px;
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 80px 20px 20px 20px;
 }
 
 #status {
+	text-align: center;
+	color: #888;
 	font: 60px/68px 'DaysRegular', Arial, sans-serif;
+	text-shadow: 1px 1px 0px #ccc, -1px -1px 0px #333;
 	letter-spacing: 0;
 }
 
 #progress {
-	height: 80px;
+	text-align: center;
+}
+
+#overlay {
+	display: none;
+	z-index: 50;
+	opacity: 0.9;
+	margin: 1px;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	position: fixed;
+	background-color: #222;
+}
+
+#browserwarning {
+	display: none;
+	text-align: center;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	background-color: #999;
+	padding: 3px 12px 3px 12px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 10pt;
+	font-family: 'DaysRegular', Arial, sans-serif;
+	color: #bbb;
+	box-shadow: 1px 1px 0px #333;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover, #footer a:hover {
+	text-decoration: underline;
 }
