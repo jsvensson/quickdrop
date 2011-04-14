@@ -45,4 +45,5 @@ function onDragLeave(evt) {
 function onDrop(evt) {
 	noopHandler(evt);
 	$("#overlay").fadeOut(150);
+	$("#status").html("Uploading...")
 }
