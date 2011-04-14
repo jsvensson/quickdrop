@@ -1,4 +1,4 @@
-quickDrop = {
+var quickDrop = {
 
 	doBrowserWarning: function() {
 		var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
@@ -40,14 +40,15 @@ quickDrop = {
 	},
 
 	onDrop: function(evt) {
-		this.noopHandler(evt);
+		// this.noopHandler(evt);
 		$("#overlay").fadeOut(150);
+		setStatus("Uploading...");
 	},
-	
-	setStatus: function(msg) {
-		$("#status").html(msg);		
-	}
 };
+
+function setStatus(msg) {
+	$("#status").html(msg);
+}
 
 $(document).ready(function() {
 	quickDrop.doBrowserWarning();
