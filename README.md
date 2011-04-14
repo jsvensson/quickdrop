@@ -11,3 +11,9 @@ Supported browsers
 ==================
 
 QuickDrop is developed in OS X using Chrome, which fully supports the requirements. Further browser support will be implemented when the basic functionality is in.
+
+Feature ideas
+=============
+
+* Automatic cleanup of files after X days
+* Short URL generation via various services
