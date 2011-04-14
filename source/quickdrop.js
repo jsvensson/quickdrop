@@ -23,11 +23,12 @@ function initHandlers() {
 	// The ondragover event needs to be canceled in Google Chrome
 	// and Safari to allow firing the ondrop event.
 	// ref: http://help.dottoro.com/ljrkqflw.php
-	document.getElementById("overlay").addEventListener("dragleave", onDragLeave, false);
-	document.getElementById("overlay").addEventListener("dragover", noopHandler, false);
+	$("#overlay").bind("dragleave", onDragLeave);	
+	$("#overlay").bind("dragover", noopHandler);
 
 	// File gets dropped
-	document.getElementById("overlay").addEventListener("drop", onDrop, false);}
+	$("#overlay").bind("drop", onDrop);
+}
 
 function noopHandler(evt) {
 	evt.stopPropagation();
