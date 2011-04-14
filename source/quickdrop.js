@@ -17,7 +17,7 @@ function doBrowserWarning() {
 
 function initHandlers() {
 	// The body listens for a dragged file entering
-	document.getElementById("body").addEventListener("dragenter", onDragEnter, false);
+	$("#body").bind("dragenter", onDragEnter);
 
 	// The overlay listens for the dragleave event
 	// The ondragover event needs to be canceled in Google Chrome
